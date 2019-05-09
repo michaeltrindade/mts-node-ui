@@ -1,0 +1,16 @@
+
+<content-header name="Dashboard" small="Versão 1.0"></content-header>
+    <!--abaixo chamaremos nosso componente da classe valueBox.js-->
+<!-- ao usar ng-controller estou chaMANDO MEU CONTROLLER DA CLASSE dashboardController.js e exibindo os dados na tela.-->
+<section class="content" ng-controller="DashboardCtrl as dashboard">
+  
+    <!--ao usar | number: 2, conforme a linha 8, 10, 12 eu estou passando um filtro que garante duas casas decimais nos meus campos do dashboard-->
+    <value-box grid="4" color-class="bg-green" icon-class="fa fa-bank" value="R$ {{ dashboard.credit | number: 2  }}" text="Total de Créditos"></value-box>
+
+    <value-box grid="4" color-class="bg-red" icon-class="fa fa-credit-card" value="R$ {{dashboard.debt | number: 2  }}" text="Total de Débitos"></value-box>
+
+    <value-box grid="4" color-class="bg-blue" icon-class="fa fa-money" value="R$ {{ dashboard.total | number: 2  }}" text="Saldo"></value-box>
+  
+</section>
+  
+      
