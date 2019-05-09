@@ -1,6 +1,6 @@
 angular.module('primeiraApp', [
     'ui.router',
-    'ngAnimate',
+    //'ngAnimate',
     'toastr'
     /**
      * ui-router é para sempre que navegar de uma pagina para outra, ele vai atualizar index.html

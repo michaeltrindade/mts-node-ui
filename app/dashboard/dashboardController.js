@@ -11,11 +11,12 @@
       
         const url = 'http://localhost:3003/api/billingSummary'
         $http.get(url).then(function(response) {
-          //const {credit = 0, debt = 0} = response.data não funcionou com a atualização do curso
-          var data = response.data
-          vm.credit = data.credit
-          vm.debt = data.debt
-          vm.total = data.credit - data.debt
+          const {credit = 0, debt = 0} = response.data 
+          //funcionou com o codigo abaixo tambem do curso
+          //var data = response.data
+          vm.credit = credit
+          vm.debt = debt
+          vm.total = credit - debt
         })
       }
     
