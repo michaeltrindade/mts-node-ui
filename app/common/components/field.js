@@ -4,10 +4,10 @@
         bindings: {
             id: '@',
             label: '@',
-            grid: '@',
-            placeholder: '@',
             type: '@',
+            grid: '@',
             model: '=',
+            placeholder: '@',      
             readonly: '<',
         },
         //fazendo a injeção de dependencia chamando meu controller, isso irá converter o meu parametro grid em classes CSS do bootstrap
